@@ -3,33 +3,38 @@
 
 <head>
     <title>Search</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div>
-        <a href="index.html">Google Search</a>
+        <a href="index.html" style="position: absolute; top: 8px; right: 16px;">Google Search</a>
     </div>
-    <form action="https://google.com/search">
-        <div>
-            <label for="all these words:">all these words:</label>
-            <input type="text" name="q">
-        </div>
-        <div>
-            <label for="his exact word or phrase:">his exact word or phrase:</label>
-            <input type="text" name="q">
-        </div>
-        <div>
-            <label for="any of these words:">any of these words:</label>
-            <input type="text" name="q">
-        </div>
-        <div>
-            <label for="none of these words:">none of these words:</label>
-            <input type="text" name="q">
-        </div>
-        <div>
-            <input type="submit" value="Advanced Search">
-        </div>
-    </form>
+    <div>
+        <p>Advanced Search</p>
+        <hr>
+        <form action="https://www.google.com/advanced_search">
+            <div class="adv_query">
+                <label for="all these words:">all these words:</label>
+                <input type="text" name="q">
+            </div>
+            <div class="adv_query">
+                <label for="his exact word or phrase:">his exact word or phrase:</label>
+                <input type="text" name="q">
+            </div>
+            <div class="adv_query">
+                <label for="any of these words:">any of these words:</label>
+                <input type="text" name="q">
+            </div>
+            <div class="adv_query">
+                <label for="none of these words:">none of these words:</label>
+                <input type="text" name="q">
+            </div>
+            <div>
+                <input id="adv_search_button" type="submit" value="Advanced Search">
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
