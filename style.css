@@ -12,7 +12,7 @@ a {
     right: 150px;
 }
 
-form[action="https://google.com/search"],form[action="https://www.google.com/imghp"] {
+form[action="https://google.com/search"],form[action="https://www.google.com/search"] {
     position: absolute;
     top: 35%;
     width: 100%;
@@ -29,10 +29,14 @@ input[type="text"] {
     border-width: thin;
     border-radius: 50px;
     margin-top: 10px;
+    outline: none;
 }
 
 .submit {
     margin-top: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
 }
 
 #adv_search_button {
@@ -41,11 +45,13 @@ input[type="text"] {
     margin-top: 10px;
     border: none;
     border-radius: 3px;
+    margin-left: 703px;
+    padding: 10px;
 }
 
-p {
+#p {
     margin-top: 60px;
-    margin-left: 10px;
+    margin-left: 20px;
     color: #d93025;
     font-size: 20px;
 }
@@ -53,4 +59,25 @@ p {
 hr {
    margin-top: 30px;
    border-top: 1px gray;
+}
+
+p {
+    margin-left: 20px;
+}
+
+.adv_query {
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.adv_query > div {
+    width: 150px;
+    float: left;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.adv_query > input {
+    width: 650px;
+    border-radius: 2px;
 }
